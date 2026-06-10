@@ -238,7 +238,7 @@ export default function Footer() {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
           >
-            <h2 className="footer__brand-text">RITESTOCK LTD</h2>
+            <h2 className="footer__brand-text">RITESTOCK</h2>
           </motion.div>
 
           {/* Divider */}
@@ -257,7 +257,7 @@ export default function Footer() {
             animate={isInView ? "visible" : "hidden"}
           >
             <span className="footer__copyright">
-              © 2026 Ritestock Ltd. All rights reserved.
+              © 2026 Ritestock. All rights reserved.
             </span>
             <span className="footer__bottom-tag">
               FMCG Sourcing &amp; Distribution — Ghana

@@ -17,7 +17,7 @@ export default function App() {
       <div>
         <NavBar />
         <HeroSection />
-        <MarqueeBanner />
+        {/* <MarqueeBanner /> (temporarily hidden) */}
         <AboutSection />
         <ServicesSection />
         <ProductsSection />

@@ -70,26 +70,7 @@ export default function CTABanner() {
       {/* Content */}
       <div className="cta-banner__content">
         {/* Label with lines */}
-        <motion.div
-          className="cta-banner__label-wrap"
-          variants={fadeIn(0.3)}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-        >
-          <motion.span
-            className="cta-banner__label-line"
-            variants={lineExpand(0.5)}
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-          />
-          <span className="cta-banner__label">Partner With Us</span>
-          <motion.span
-            className="cta-banner__label-line"
-            variants={lineExpand(0.5)}
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-          />
-        </motion.div>
+        
 
         {/* Heading */}
         <motion.h2
@@ -138,7 +119,7 @@ export default function CTABanner() {
             <span className="cta-banner__input-dot" />
           </div>
           <button type="submit" className="cta-banner__btn">
-            <span className="cta-banner__btn-text">Start a Conversation</span>
+            <span className="cta-banner__btn-text">Contact Us</span>
             <span className="cta-banner__btn-arrow">→</span>
           </button>
         </motion.form>
