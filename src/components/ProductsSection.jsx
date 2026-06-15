@@ -27,7 +27,7 @@ const products = [
     number: "01",
     title: "Household Essentials",
     description:
-      "Essential household products curated for daily consumer needs across Ghana's retail channels.",
+      "We supply a wide range of essential household products, carefully curated to meet the everyday needs of modern consumers.",
     badge: "DAILY USE",
     image: "https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=700&q=85",
     accent: "blue",
@@ -36,7 +36,7 @@ const products = [
     number: "02",
     title: "Toiletries & Personal Care",
     description:
-      "Trusted personal care products designed for daily hygiene, convenience, and consumer confidence.",
+      "We offer a robust selection of personal care and toiletry products from trusted brands, designed for daily use.",
     badge: "HIGH DEMAND",
     image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=700&q=85",
     accent: "orange",
@@ -45,7 +45,7 @@ const products = [
     number: "03",
     title: "Food & Beverages",
     description:
-      "A diverse portfolio of food and beverage products tailored to evolving consumer tastes.",
+      "We manage a diverse and well-balanced portfolio of food and beverage products tailored to evolving consumer tastes and market demand",
     badge: "FAST MOVING",
     image: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?auto=format&fit=crop&w=700&q=85",
     accent: "blue",
@@ -108,7 +108,6 @@ export default function ProductsSection() {
                 loading="lazy"
               />
               <div className="products__card-image-overlay" />
-              <span className="products__card-badge">{product.badge}</span>
               <span className="products__card-number">{product.number}</span>
             </div>
 

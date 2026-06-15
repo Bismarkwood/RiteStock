@@ -131,7 +131,7 @@ export default function CTABanner() {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          Trusted FMCG sourcing &amp; distribution partner in Ghana.
+          Trusted FMCG sourcing &amp; distribution partner worldwide.
         </motion.p>
       </div>
     </section>

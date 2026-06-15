@@ -52,7 +52,7 @@ const carouselItems = [
   {
     type: "content",
     title: "Product Categories",
-    quote: "Household products, toiletries, food, and beverages — the core categories we source, position, and distribute across Ghana.",
+    quote: "Household products, toiletries, food, and beverages — the core categories we source, position, and distribute across global markets.",
     color: "#244A6F",
   },
   {
@@ -74,7 +74,7 @@ const carouselItems = [
   {
     type: "content",
     title: "Brand Partnerships",
-    quote: "We build lasting partnerships with leading FMCG brands, becoming their trusted distribution arm in the Ghanaian market.",
+    quote: "We build lasting partnerships with leading FMCG brands, becoming their trusted distribution arm in markets worldwide.",
     color: "#1a1a2e",
   },
   {
@@ -96,7 +96,7 @@ const carouselItems = [
   {
     type: "content",
     title: "Nationwide Coverage",
-    quote: "From Accra to Kumasi and beyond, our distribution network ensures consistent product availability across Ghana's key retail zones.",
+    quote: "From local hubs to international corridors, our distribution network ensures consistent product availability across key retail zones worldwide.",
     color: "#E36A2E",
   },
   {
@@ -129,13 +129,15 @@ export default function AboutSection() {
         <span className="about__tag">ABOUT RITESTOCK</span>
         <h2 className="about__title">
           Connecting Products to<br />
-          <span className="about__title-accent">Ghana's Retail Market</span>
+          <span className="about__title-accent">Global Retail Markets</span>
         </h2>
         <div className="about__title-line" />
         <p className="about__intro">
-          Ritestock is a results-driven FMCG sourcing and distribution company
-          helping brands, producers, and retailers move high-demand consumer
-          goods efficiently across Ghana's retail channels.
+          We are a results-driven FMCG sourcing and distribution company
+          focused on connecting high-demand products with retail markets
+          efficiently and reliably in Ghana. Our core strength lies in
+          identifying fast-moving consumer goods that meet market needs and
+          ensuring their consistent availability across retail channels.
         </p>
       </motion.div>
 

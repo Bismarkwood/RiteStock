@@ -107,21 +107,7 @@ export default function HeroSection() {
         ))}
       </div>
 
-      {/* Handwritten accent — top right */}
-      <motion.div
-        className="hero__handwritten"
-        initial={{ opacity: 0, x: 20 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.2, delay: 2.8, ease: cineEase }}
-      >
-        <span className="hero__handwritten-text">From Source to Shelf</span>
-        <motion.span
-          className="hero__handwritten-line"
-          initial={{ scaleX: 0 }}
-          animate={{ scaleX: 1 }}
-          transition={{ duration: 0.8, delay: 3.4, ease: cineEase }}
-        />
-      </motion.div>
+
 
       {/* Main content block — parallax on scroll */}
       <motion.div
@@ -153,7 +139,7 @@ export default function HeroSection() {
           initial="hidden"
           animate="visible"
         >
-          FMCG SOURCING &amp; DISTRIBUTION — GHANA
+          FMCG SOURCING &amp; DISTRIBUTION — WORLDWIDE
         </motion.h1>
       </motion.div>
 
@@ -202,7 +188,7 @@ export default function HeroSection() {
         initial="hidden"
         animate="visible"
       >
-        Est. Ghana · FMCG Distribution
+        Est. Worldwide · FMCG Distribution
       </motion.span>
     </section>
   );

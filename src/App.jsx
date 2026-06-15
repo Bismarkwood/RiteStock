@@ -14,14 +14,13 @@ export default function App() {
   return (
     <>
       <IntroLoader />
-      <div>
+      <div style={{ overflowX: "clip" }}>
         <NavBar />
         <HeroSection />
-        {/* <MarqueeBanner /> (temporarily hidden) */}
         <AboutSection />
         <ServicesSection />
         <ProductsSection />
-        <CTABanner />
+        {/* <CTABanner /> */}
         <Footer />
       </div>
     </>

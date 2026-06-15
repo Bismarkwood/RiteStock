@@ -42,7 +42,7 @@ export default function MarqueeBanner() {
           <span className="marquee-banner__dot">●</span>
           <span className="marquee-banner__item">FMCG Sourcing</span>
           <span className="marquee-banner__dot">●</span>
-          <span className="marquee-banner__item">Ghana Market</span>
+          <span className="marquee-banner__item">Global Market</span>
           <span className="marquee-banner__dot">●</span>
           <span className="marquee-banner__item">Reliable Supply</span>
           <span className="marquee-banner__dot">●</span>
@@ -54,7 +54,7 @@ export default function MarqueeBanner() {
           <span className="marquee-banner__dot">●</span>
           <span className="marquee-banner__item">FMCG Sourcing</span>
           <span className="marquee-banner__dot">●</span>
-          <span className="marquee-banner__item">Ghana Market</span>
+          <span className="marquee-banner__item">Global Market</span>
           <span className="marquee-banner__dot">●</span>
           <span className="marquee-banner__item">Reliable Supply</span>
           <span className="marquee-banner__dot">●</span>

@@ -39,7 +39,6 @@ const linkColumns = [
       { label: "Retail Placement", href: "#service" },
       { label: "Distribution", href: "#service" },
       { label: "Marketing Activation", href: "#service" },
-      { label: "Product Sourcing", href: "#service" },
     ],
   },
   {
@@ -55,6 +54,14 @@ const linkColumns = [
 export default function Footer() {
   const footerRef = useRef(null);
   const isInView = useInView(footerRef, { once: true, margin: "-60px" });
+
+  const handleScrollTo = (e, href) => {
+    e.preventDefault();
+    const target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="footer-wrapper">
@@ -93,7 +100,7 @@ export default function Footer() {
               {/* Brand label */}
               <div className="footer__brand-label">
                 <img src="/logo.png" alt="RiteStock" className="footer__mini-logo" />
-                <span className="footer__brand-tag">FMCG SOURCING &amp; DISTRIBUTION — GHANA</span>
+                <span className="footer__brand-tag">FMCG SOURCING &amp; DISTRIBUTION — WORLDWIDE</span>
               </div>
 
               <h3 className="footer__cta-heading">Let's move your products.</h3>
@@ -155,7 +162,11 @@ export default function Footer() {
                   <ul className="footer__col-list">
                     {col.links.map((link) => (
                       <li key={link.label}>
-                        <a href={link.href} className="footer__col-link">
+                        <a
+                          href={link.href}
+                          className="footer__col-link"
+                          onClick={(e) => handleScrollTo(e, link.href)}
+                        >
                           <span className="footer__col-link-arrow">→</span>
                           {link.label}
                         </a>
@@ -184,22 +195,12 @@ export default function Footer() {
                   </li>
                   <li>
                     <span className="footer__contact-label">Location</span>
-                    <span className="footer__contact-val">Ghana</span>
+                    <span className="footer__contact-val">Accra - Ghana</span>
                   </li>
                 </ul>
               </motion.div>
             </div>
           </div>
-
-          {/* Source to Shelf badge */}
-          <motion.div
-            className="footer__badge-wrap"
-            variants={fadeIn(0.8)}
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-          >
-            <span className="footer__badge">SOURCE TO SHELF</span>
-          </motion.div>
 
           {/* Subtle category ticker */}
           <div className="footer__ticker">
@@ -231,16 +232,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Massive brand text */}
-          <motion.div
-            className="footer__brand-text-wrap"
-            variants={fadeUp(0.9)}
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-          >
-            <h2 className="footer__brand-text">RITESTOCK</h2>
-          </motion.div>
-
           {/* Divider */}
           <motion.div
             className="footer__divider"
@@ -260,7 +251,7 @@ export default function Footer() {
               © 2026 Ritestock. All rights reserved.
             </span>
             <span className="footer__bottom-tag">
-              FMCG Sourcing &amp; Distribution — Ghana
+              FMCG Sourcing &amp; Distribution — Worldwide
             </span>
             <div className="footer__bottom-links">
               <a href="#" className="footer__bottom-link">Privacy Policy</a>
