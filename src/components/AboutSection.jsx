@@ -141,6 +141,46 @@ export default function AboutSection() {
         </p>
       </motion.div>
 
+      {/* Partnership & Logistics feature cards */}
+      <motion.div
+        className="about__features"
+        variants={fadeUp(0.3)}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+      >
+        <div className="about__feature-card">
+          <div className="about__feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <h4 className="about__feature-title">Diverse Product Portfolio</h4>
+          <p className="about__feature-text">
+            By partnering with both local producers and global brands, we curate
+            a diverse portfolio of quality products—from everyday essentials to
+            emerging consumer favourites.
+          </p>
+        </div>
+
+        <div className="about__feature-card">
+          <div className="about__feature-icon about__feature-icon--alt">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="1" y="3" width="15" height="13" rx="2" />
+              <path d="M16 8h4l3 3v5h-7V8z" />
+              <circle cx="5.5" cy="18.5" r="2.5" />
+              <circle cx="18.5" cy="18.5" r="2.5" />
+            </svg>
+          </div>
+          <h4 className="about__feature-title">Streamlined Logistics</h4>
+          <p className="about__feature-text">
+            Our streamlined logistics and distribution systems ensure that goods
+            move quickly and efficiently from source to shelf.
+          </p>
+        </div>
+      </motion.div>
+
       {/* Infinite scrolling carousel */}
       <div className="about__carousel-wrap">
         <div className="about__carousel-track">

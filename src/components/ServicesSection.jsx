@@ -166,19 +166,7 @@ function ServiceCard({ service, index, totalCards, onClick }) {
         tabIndex={0}
         onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onClick(service); } }}
       >
-        {/* Image side */}
-        <div className="services__card-image-wrap">
-          <img
-            src={service.image}
-            alt={service.title}
-            className="services__card-image"
-            loading="lazy"
-          />
-          <div className="services__card-image-overlay" />
-          <span className="services__card-caption">{service.caption}</span>
-        </div>
-
-        {/* Content side */}
+        {/* Content */}
         <div className="services__card-content">
           <span className="services__card-number">{service.number}</span>
 
@@ -197,9 +185,9 @@ function ServiceCard({ service, index, totalCards, onClick }) {
             ))}
           </ul>
 
-          {/* Click hint */}
+          {/* Click to read CTA */}
           <span className="services__card-cta">
-            <span className="services__card-cta-text">Click to learn more</span>
+            <span className="services__card-cta-text">Click to read more</span>
             <span className="services__card-cta-arrow">→</span>
           </span>
 

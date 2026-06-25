@@ -164,9 +164,9 @@
 }
 
 .services__card-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 520px;
+  display: block;
+  min-height: auto;
+  cursor: pointer;
 }
 
 /* ─── Image Side ─── */
@@ -347,6 +347,15 @@
   order: 1;
 }
 
+/* Reverse layout for dark card */
+.services__card--dark .services__card-image-wrap {
+  order: 2;
+}
+
+.services__card--dark .services__card-content {
+  order: 1;
+}
+
 /* ─── Card Variant: Accent ─── */
 .services__card--accent .services__card-content {
   background: #fafafa;
@@ -372,7 +381,7 @@
   }
 
   .services__card-inner {
-    min-height: 450px;
+    min-height: auto;
   }
 
   .services__card-content {
@@ -408,20 +417,7 @@
   }
 
   .services__card-inner {
-    grid-template-columns: 1fr;
     min-height: auto;
-  }
-
-  .services__card-image-wrap {
-    height: 240px;
-  }
-
-  .services__card--dark .services__card-image-wrap {
-    order: 0;
-  }
-
-  .services__card--dark .services__card-content {
-    order: 0;
   }
 
   .services__card-content {

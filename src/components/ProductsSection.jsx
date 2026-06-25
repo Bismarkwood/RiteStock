@@ -73,8 +73,8 @@ export default function ProductsSection() {
       >
         <span className="products__tag">PRODUCT CATEGORIES</span>
         <h2 className="products__title">
-          Fast-Moving Essentials for{" "}
-          <span className="products__title-accent">Everyday Markets</span>
+          Right Stock for{" "}
+          <span className="products__title-accent">Everyday Living</span>
         </h2>
         <motion.div
           className="products__title-line"
@@ -85,7 +85,7 @@ export default function ProductsSection() {
         <p className="products__intro">
           Ritestock sources and distributes everyday consumer products across
           household, toiletries, food, and beverage categories — helping brands
-          stay visible, available, and market-ready.
+          stay visible, available, and positioned for growth.
         </p>
       </motion.div>
 
